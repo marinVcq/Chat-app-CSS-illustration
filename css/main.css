@@ -337,10 +337,10 @@ a {
     transform: translateX(-50%);
     font-size: 1.6rem; } }
 #message-1 {
-  animation: 1s slide-right 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
+  animation: 0.5s slide-right 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
 
 #message-2 {
-  animation: 1s slide-right 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
+  animation: 0.5s slide-right 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
 
 #image-1 {
   animation: 0.5s slide-image 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
