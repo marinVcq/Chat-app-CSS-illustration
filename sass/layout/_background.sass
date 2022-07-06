@@ -5,7 +5,7 @@
     .left-pattern
         @include width-height(50.7rem,70.1rem)
         @include set-position(absolute, -19.2rem ,-31.8rem)
-        background: linear-gradient(0deg, $light-violet, $light-magenta)
+        background: linear-gradient(30deg, $light-violet 0%, $light-magenta 100%)
         border-radius: 0 0 25.35rem 25.35rem
 
     .right-pattern
@@ -13,7 +13,8 @@
         @include width-height(50.7rem,70.1rem)
         @include set-position(absolute,undefined,77.43%,0)
         border-radius: 25.35rem 25.35rem 0 0
-        background-color: $moderate-light-grayish-violet
+        /*background-color: $moderate-light-grayish-violet*/
+        background-color: rgba($moderate-light-grayish-violet, 0.4)
 
 /* Media query */
 

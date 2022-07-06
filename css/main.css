@@ -131,7 +131,8 @@ a {
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      margin-top: 0.3rem; }
+      margin-top: 0.3rem;
+      overflow-x: hidden; }
       .illustration-container .chat-container .message-container .message {
         margin: 0.8rem 0.7rem 0 0.7rem;
         font-size: 0.8rem;
@@ -291,7 +292,7 @@ a {
     left: -31.8rem;
     right: 0;
     bottom: 0;
-    background: linear-gradient(0deg, #8838ff, #e942ff);
+    background: linear-gradient(30deg, #8838ff 0%, #e942ff 100%);
     border-radius: 0 0 25.35rem 25.35rem; }
   .background-container .right-pattern {
     display: none;
@@ -303,7 +304,8 @@ a {
     right: 0;
     bottom: 0;
     border-radius: 25.35rem 25.35rem 0 0;
-    background-color: #eee6f4; }
+    /*background-color: $moderate-light-grayish-violet */
+    background-color: rgba(238, 230, 244, 0.4); }
 
 /* Media query */
 @media only screen and (min-width: 1000px) {
@@ -334,3 +336,55 @@ a {
     bottom: 0;
     transform: translateX(-50%);
     font-size: 1.6rem; } }
+#message-1 {
+  /*animation: 0.5s appear-left 1s ease-in-out */
+  animation: 1s slide-right 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
+
+#message-2 {
+  /*animation: 0.5s appear-left 1s ease-in-out */
+  animation: 1s slide-right 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
+
+#image-1 {
+  animation: 0.5s slide-image 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+#image-2 {
+  animation: 0.5s slide-image 2.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+#image-3 {
+  animation: 0.5s slide-image 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+#message-3 {
+  /*animation: 0.5s appear-left 1s ease-in-out */
+  animation: 0.5s slide-left 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+#message-4 {
+  /*animation: 0.5s appear-left 1s ease-in-out */
+  animation: 0.5s slide-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+#message-5 {
+  /*animation: 0.5s appear-left 1s ease-in-out */
+  animation: 0.5s slide-right 6s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
+
+#message-6 {
+  /*animation: 0.5s appear-left 1s ease-in-out */
+  animation: 0.5s slide-right 6.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
+
+#message-7 {
+  /*animation: 0.5s appear-left 1s ease-in-out */
+  animation: 0.5s slide-right 6.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-150%); }
+  100% {
+    transform: translateX(0%); } }
+@keyframes slide-left {
+  0% {
+    transform: translateX(150%); }
+  100% {
+    transform: translateX(0%); } }
+@keyframes slide-image {
+  0% {
+    transform: translateX(400%); }
+  100% {
+    transform: translateX(0%); } }
