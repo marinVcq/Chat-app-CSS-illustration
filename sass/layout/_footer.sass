@@ -1,0 +1,17 @@
+.attribution
+    text-align: center
+    padding: 2rem 0 2rem 0
+    font-size: 1.3rem
+    color: $desaturated-dark-violet
+
+.attribution
+    a
+        color: $moderate-violet
+        font-weight: 700
+
+@include respond(desktop)
+    .attribution
+        @include set-position(absolute, 92%, 50%)
+        transform: translateX(-50%)
+        font-size: 1.6rem
+        

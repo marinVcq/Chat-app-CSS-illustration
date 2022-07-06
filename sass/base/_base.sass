@@ -51,3 +51,7 @@ body
 a
 	text-decoration: none
 	cursor: pointer
+
+@include respond(desktop)
+	body
+		@include width-height(100%, 100vh)

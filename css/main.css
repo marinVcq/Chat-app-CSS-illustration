@@ -34,10 +34,13 @@ a {
   text-decoration: none;
   cursor: pointer; }
 
+@media only screen and (min-width: 1000px) {
+  body {
+    width: 100%;
+    height: 100vh; } }
 .illustration-container {
   width: 24.7rem;
   height: 50.6rem;
-  /*@include flexbox(row, center,center) */
   padding: 1rem;
   box-shadow: 0px 20px 22px 14px rgba(168, 168, 168, 0.3);
   background-color: white;
@@ -60,7 +63,12 @@ a {
       border-radius: 2rem 2rem 0.5rem 0.5rem; }
       .illustration-container .chat-container .top-app .top-app-pattern {
         width: 12.9rem;
-        height: 1.8rem;
+        height: 1.9rem;
+        position: relative;
+        top: -0.1rem;
+        left: undefined;
+        right: 0;
+        bottom: 0;
         border-radius: 0 0 1.2rem 1.2rem;
         background-color: white; }
       .illustration-container .chat-container .top-app .avatar-container {
@@ -235,7 +243,7 @@ a {
     margin: 14.7rem 0 0 36.3rem; } }
 .main-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -250,22 +258,8 @@ a {
     .main-container .text-container p {
       font-size: 1.6;
       line-height: 2.8rem;
-      margin: 2.7rem 3.4rem 6.8rem 3.4rem; }
-
-.attribution {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  right: 0;
-  bottom: 0;
-  transform: translate(-50%, -50%);
-  padding-bottom: 2rem;
-  font-size: 11px;
-  text-align: center; }
-
-.attribution a {
-  color: #3e52a3; }
+      margin: 2.7rem 3.4rem 6.8rem 3.4rem;
+      max-width: 55rem; }
 
 /* Media Query */
 @media only screen and (min-width: 1000px) {
@@ -275,18 +269,11 @@ a {
     justify-content: flex-start;
     align-items: flex-start; }
     .main-container .text-container {
-      justify-self: start;
       align-self: center;
       text-align: start;
-      margin: 0 0 0 12.2rem;
+      margin: 0 4rem 0 12.2rem;
       max-width: 44.5rem; }
-      .main-container .text-container h1 {
-        font-size: 3.8rem;
-        font-weight: 500;
-        color: #3e2753; }
       .main-container .text-container p {
-        font-size: 1.6;
-        line-height: 2.8rem;
         margin: 2.7rem 0 0 0; } }
 .background-container {
   position: absolute;
@@ -304,7 +291,6 @@ a {
     left: -31.8rem;
     right: 0;
     bottom: 0;
-    /*@include set-position(absolute, -19.2rem ,-31.8rem) */
     background: linear-gradient(0deg, #8838ff, #e942ff);
     border-radius: 0 0 25.35rem 25.35rem; }
   .background-container .right-pattern {
@@ -329,3 +315,22 @@ a {
     bottom: 0; }
   .background-container .right-pattern {
     display: block; } }
+.attribution {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+  font-size: 1.3rem;
+  color: #6e5d7e; }
+
+.attribution a {
+  color: #9241c8;
+  font-weight: 700; }
+
+@media only screen and (min-width: 1000px) {
+  .attribution {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 1.6rem; } }

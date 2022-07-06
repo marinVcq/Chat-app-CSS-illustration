@@ -1,6 +1,5 @@
 .illustration-container
     @include width-height(24.7rem, 50.6rem)
-    /*@include flexbox(row, center,center)*/
     padding: 1rem
     box-shadow: 0px 20px 22px 14px rgba( 168, 168, 168, .3 )
     background-color: $white
@@ -20,7 +19,8 @@
             border-radius: 2rem 2rem 0.5rem 0.5rem
 
             .top-app-pattern
-                @include width-height(12.9rem, 1.8rem)
+                @include width-height(12.9rem, 1.9rem)
+                @include set-position(relative, -0.1rem,undefined)
                 border-radius: 0 0 1.2rem 1.2rem
                 background-color: $white
 

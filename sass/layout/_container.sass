@@ -1,5 +1,5 @@
 .main-container
-    @include width-height(100%,100vh)
+    @include width-height(100%,100%)
     @include flexbox(column, flex-start, center)
 
     .text-container
@@ -15,17 +15,7 @@
             font-size: 1.6
             line-height: 2.8rem
             margin: 2.7rem 3.4rem 6.8rem 3.4rem
-
-.attribution
-    display: none
-    @include set-position(absolute,100%,50%)
-    transform: translate(-50%,-50%)
-    padding-bottom: 2rem
-    font-size: 11px 
-    text-align: center
-.attribution
-    a
-        color: hsl(228, 45%, 44%)
+            max-width: 55rem
 
 /* Media Query */
 
@@ -34,20 +24,12 @@
         @include flexbox(row, flex-start,flex-start)
 
         .text-container
-            justify-self: start
             align-self: center
             text-align: start
-            margin: 0 0 0 12.2rem
+            margin: 0 4rem 0 12.2rem
             max-width: 44.5rem
 
-            h1
-                font-size: 3.8rem
-                font-weight: 500
-                color: $very-dark-desaturated-violet
-
             p
-                font-size: 1.6
-                line-height: 2.8rem
                 margin: 2.7rem 0 0 0
 
 
