@@ -336,48 +336,4 @@ a {
     bottom: 0;
     transform: translateX(-50%);
     font-size: 1.6rem; } }
-#message-1 {
-  animation: 0.5s slide-right 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
-
-#message-2 {
-  animation: 0.5s slide-right 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
-
-#image-1 {
-  animation: 0.5s slide-image 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-#image-2 {
-  animation: 0.5s slide-image 2.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-#image-3 {
-  animation: 0.5s slide-image 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-#message-3 {
-  animation: 0.5s slide-left 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-#message-4 {
-  animation: 0.5s slide-left 5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-
-#message-5 {
-  animation: 0.5s slide-right 6s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
-
-#message-6 {
-  animation: 0.5s slide-right 6.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
-
-#message-7 {
-  animation: 0.5s slide-right 6.75s cubic-bezier(0.68, -0.55, 0.265, 1.55) both; }
-
-@keyframes slide-right {
-  0% {
-    transform: translateX(-150%); }
-  100% {
-    transform: translateX(0%); } }
-@keyframes slide-left {
-  0% {
-    transform: translateX(150%); }
-  100% {
-    transform: translateX(0%); } }
-@keyframes slide-image {
-  0% {
-    transform: translateX(400%); }
-  100% {
-    transform: translateX(0%); } }
+/*@import layout/_animation.sass */
